@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bonic-electronic", "bonic-electronic\bonic-electronic.csproj", "{385A1726-3467-4BA3-9F01-4DC390C7100F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{385A1726-3467-4BA3-9F01-4DC390C7100F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{385A1726-3467-4BA3-9F01-4DC390C7100F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{385A1726-3467-4BA3-9F01-4DC390C7100F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{385A1726-3467-4BA3-9F01-4DC390C7100F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E4E1E55E-F168-46AE-BBCE-4DF70DF84B78}
+	EndGlobalSection
+EndGlobal
