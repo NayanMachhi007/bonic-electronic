@@ -1,0 +1,32 @@
+﻿.full-width-image-wrapper{
+    position:relative;
+}
+
+.full-width {
+    height: 24rem;
+}
+
+.full-width-link {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    width: 100%;
+    top:70%;
+    transform:translate(-50%,-50%);
+}
+
+.full-widthlink {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    background: #E7E9EB;
+    font-weight: 600;
+    padding: 0.6rem 2rem;
+    border-radius: 2rem;
+    font-size:1.6rem;
+    transition:0.5s;
+}
+
+.full-widthlink:hover {
+        color: #0F3460;
+    }
