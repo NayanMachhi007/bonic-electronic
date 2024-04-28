@@ -1,0 +1,32 @@
+﻿.banner-swiper{
+    height:50vh;
+}
+
+.banner-description {
+    padding-bottom: 2rem;
+    color: rgb(15, 52, 96);
+}
+.bannerdes{
+    font-size:1.2vw;
+}
+
+.bannerlink {
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: inherit;
+    background: rgb(233, 69, 96);
+    line-height: 1;
+    border: none;
+    color: rgb(255, 255, 255);
+    height: 40px;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 1rem 1.5rem;
+    display:inline-block;
+}
+.bannerlink:hover{
+    color:white;
+}
+

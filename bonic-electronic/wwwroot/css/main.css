@@ -1,6 +1,11 @@
-﻿@import "./card_simple.css";
+﻿@import "./small_card.css";
 @import "./custom_card.css";
 @import "./custom_logo_cat.css";
 @import "./footer.css";
 @import "./global.css";
 @import "./media_query.css";
+@import "./small_image_caption.css";
+@import "./multi_image.css";
+@import "./cateogory.css";
+@import "./signpost.css";
+@import "./banner.css";

@@ -1,0 +1,36 @@
+﻿.image-main-multi {
+    position: relative;
+}
+
+.multi-image-offer {
+    display: inline-flex;
+    border-radius: 300px;
+    transition: all 150ms ease-in-out 0s;
+    cursor: unset;
+    box-shadow: unset;
+    padding: 4px 10px;
+    color: white;
+    background-color: rgb(15, 52, 96);
+    top: 1.5rem;
+    left: 1.5rem;
+    position: absolute;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.multi-week-offer {
+    display: inline-flex;
+    border-radius: 300px;
+    transition: all 150ms ease-in-out 0s;
+    cursor: unset;
+    box-shadow: unset;
+    padding: 4px 10px;
+    background-color: rgb(227, 233, 239);
+    color: rgb(55, 63, 80);
+    top: 1.5rem;
+    right: 1.5rem;
+    position: absolute;
+    font-size: 10px;
+    font-weight: 600;
+}
+}

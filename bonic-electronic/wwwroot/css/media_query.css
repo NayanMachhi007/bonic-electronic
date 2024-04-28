@@ -1,2 +1,10 @@
-﻿body {
+﻿@media only screen and (max-width: 70rem) {
+
+    img{
+        object-fit:contain;
+    }
+
+    .card-small-image::after{
+        width:0;
+    }
 }
