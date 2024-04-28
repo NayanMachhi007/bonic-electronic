@@ -2,6 +2,7 @@
     cursor:pointer;
     margin-bottom:2rem;
     transition:0.5s;
+    border-radius:5px;
 }
 .cat-wrapper:hover {
     box-shadow: rgba(3, 0, 71, 0.09) 0px 8px 45px;
@@ -15,5 +16,5 @@
 .cat-title-heading {
     margin-left: 8px;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 12px;
 }
