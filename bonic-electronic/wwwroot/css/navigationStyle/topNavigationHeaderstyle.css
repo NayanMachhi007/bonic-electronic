@@ -1,0 +1,43 @@
+﻿
+.header_logo_container{
+    width:12rem;
+}
+.search_section__filter_dropdown {
+    width: 100%;
+}
+
+    .search_section__filter_dropdown:focus {
+        border: 1px solid red;
+    }
+
+.hambuerger_icon {
+    font-size: 50px;
+    color: black;
+}
+
+.header_btn_style{
+    background-color: #F3F5F9;
+    border: none;
+    border-radius: 50%;
+    outline: 0;
+    padding:1rem;
+}
+
+.search_section__filter_dropdown {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.form-control {
+    border: none;
+    height:3rem;
+}
+.form-control:focus {
+        box-shadow: none;      
+}
+
+
+
+/*.btn-check:focus + .btn, .btn:focus {
+    box-shadow: none;
+}*/
+

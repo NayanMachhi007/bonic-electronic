@@ -8,33 +8,184 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/bonic_electronic.styles.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/css/main.css" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/navigationStyle/topNavigationHeaderstyle.css"/>
+    <link rel="stylesheet" href="~/css/main.css" />
     @await RenderSectionAsync("head", required: false)
 
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">bonic_electronic</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="module" asp-action="module">Privacy</a>
-                        </li>
-                    </ul>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container">
+                @* header_logo_search_and_logo_container *@
+                <div class="col-2">
+                    <div class="header_logo_container">
+                        <a class="navbar-brand" href="#">
+                            <img class="header_brande_logo" src="https://bonik-react.vercel.app/assets/images/logo.svg" alt="Bootstrap" width="100" height="50">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="nav_header_search_filter_content px-5">
+                        <form class="d-flex" role="search">
+                            <div class="search_section__filter_dropdown d-flex rounded-pill">
+                                <input class="primery-font-size form-control me-2 search_section__input rounded-pill" type="search" placeholder="Search" aria-label="Search">
+                                <div class="dropdown">
+                                    <button class="primery-font-size form-control dropdown-toggle rounded-pill" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        All Categories
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="primery-font-size dropdown-item" href="#">Action</a></li>
+                                        <li><a class="primery-font-size dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="primery-font-size dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            @* <button class="btn btn-outline-success" type="submit">Search</button> *@
+                        </form>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="nav_header_container d-flex justify-content-end">
+                        <div class="d-flex">
+                            <div class="nav_header_container__login_btn_container">
+                                <button type="button" class="header_btn_style me-3">
+                                    <svg fill="#000000" width="25px" height="25px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M16 15.503A5.041 5.041 0 1 0 16 5.42a5.041 5.041 0 0 0 0 10.083zm0 2.215c-6.703 0-11 3.699-11 5.5v3.363h22v-3.363c0-2.178-4.068-5.5-11-5.5z"></path></g></svg>
+                                </button>
+                            </div>
+                            <div class="nav_header_container__cart_btn_container">
+                                <button class="header_btn_style navbar-toggler header_btn_style" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                                    <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M9 11V6C9 4.34315 10.3431 3 12 3C13.6569 3 15 4.34315 15 6V10.9673M10.4 21H13.6C15.8402 21 16.9603 21 17.816 20.564C18.5686 20.1805 19.1805 19.5686 19.564 18.816C20 17.9603 20 16.8402 20 14.6V12.2C20 11.0799 20 10.5198 19.782 10.092C19.5903 9.71569 19.2843 9.40973 18.908 9.21799C18.4802 9 17.9201 9 16.8 9H7.2C6.0799 9 5.51984 9 5.09202 9.21799C4.71569 9.40973 4.40973 9.71569 4.21799 10.092C4 10.5198 4 11.0799 4 12.2V14.6C4 16.8402 4 17.9603 4.43597 18.816C4.81947 19.5686 5.43139 20.1805 6.18404 20.564C7.03968 21 8.15979 21 10.4 21Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="primery-font-size navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                        <a class="primery-font-size nav-link active" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class=" nav-item">
+                                        <a class="primery-font-size nav-link" href="#">Link</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="primery-font-size nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Dropdown
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="primery-font-size dropdown-item" href="#">Action</a></li>
+                                            <li><a class="primery-font-size dropdown-item" href="#">Another action</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="primery-font-size dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <form class="d-flex mt-3" role="search">
+                                    <input class="primery-font-size form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </nav>
+        <div class="second_level__navigation">
+            <div class="container">
+                <div class="row">
+            <div class="col-3">
+                    <div class="second_level__navigation__dropdown_section">
+                        <div class="dropdown-center">
+                            <div class="d-flex justify-content-between">
+                            <div class="col-4">
+                                    <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g clip-path="url(#clip0_429_11052)"> <circle cx="17" cy="7" r="3" stroke="#292929" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></circle> <circle cx="7" cy="17" r="3" stroke="#292929" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></circle> <path d="M14 14H20V19C20 19.5523 19.5523 20 19 20H15C14.4477 20 14 19.5523 14 19V14Z" stroke="#292929" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M4 4H10V9C10 9.55228 9.55228 10 9 10H5C4.44772 10 4 9.55228 4 9V4Z" stroke="#292929" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path> </g> <defs> <clipPath id="clip0_429_11052"> <rect width="24" height="24" fill="white"></rect> </clipPath> </defs> </g></svg>
+                            </div>
+                                    <div class="col-8">
+                                        <button class="primery-font-size form-control btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Categories
+                            </button>
+                                    </div>
+                            @* <ul class="dropdown-menu">
+                            </ul> *@
+                                </div>
+                        </div>
                 </div>
             </div>
-        </nav>
+       
+            <div class="col-8">
+                <div class="second_level_nagivation__container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="primery-font-size nav-item dropdown">
+                                                <a class="primery-font-size nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Home
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="primery-font-size dropdown-item" href="#">Action</a></li>
+                                    <li><a class="primery-font-size dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="primery-font-size dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        <li class="primery-font-size nav-item dropdown">
+                                                <a class="primery-font-size nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                                    <li class="primery-font-size"><a class="primery-font-size dropdown-item" href="#">Action</a></li>
+                                                    <li class="primery-font-size"><a class="primery-font-size dropdown-item" href="#">Another action</a></li>
+                                                    <li class="primery-font-size"><a class="primery-font-size dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="primery-font-size nav-item dropdown">
+                            <a class="primery-font-size nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                User Account
+                            </a>
+                            <ul class="dropdown-menu">
+                                                    <li class="primery-font-size"><a class="primery-font-size dropdown-item" href="#">Action</a></li>
+                                                    <li class="primery-font-size"><a class="primery-font-size dropdown-item" href="#">Another action</a></li>
+                                                    <li class="primery-font-size"><a class="primery-font-size dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="primery-font-size nav-item dropdown">
+                            <a class="primery-font-size nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Vendor Account
+                            </a>
+                            <ul class="dropdown-menu">
+                                                    <li class="primery-font-size"><a class="primery-font-size dropdown-item" href="#">Action</a></li>
+                                                    <li class="primery-font-size"><a class="primery-font-size dropdown-item" href="#">Another action</a></li>
+                                                    <li class="primery-font-size"><a class="primery-font-size dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="primery-font-size nav-item">
+                            <a class="primery-font-size nav-link active" aria-current="page" href="#">Track My Orders</a>
+                        </li>
+                        <li class=" nav-item">
+                            <a class="primery-font-size nav-link active" aria-current="page" href="#">Back to Demos</a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+                    </div>
+            </div>
+                </div>
+            </div>
+        </div>
     </header>
+    
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
