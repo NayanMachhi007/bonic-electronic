@@ -7,4 +7,8 @@
     .card-small-image::after{
         width:0;
     }
+
+    .heading-2{
+        font-size:1.8rem;
+    }
 }
