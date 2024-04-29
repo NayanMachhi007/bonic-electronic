@@ -34,3 +34,21 @@
 .icon_dropdown{
     padding-left:20px;
 }
+
+.card-details-main{
+    position: relative;
+}
+/*.card-details__card-item_container{
+    position:absolute;
+    width:250%;
+    height:70vh;
+    top:0;
+    left:350px;
+    background-color:blueviolet;
+    display:none;
+    tr
+}
+.card-details-main:hover .card-details__card-item_container {
+    display:block;
+
+}*/

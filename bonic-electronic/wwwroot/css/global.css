@@ -253,3 +253,6 @@ a{
     color:black;
     /*text-underline-offset:none;*/
 }
+ul{
+    list-style:none;
+}
