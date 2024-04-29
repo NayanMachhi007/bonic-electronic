@@ -1,14 +1,18 @@
 ﻿@media only screen and (max-width: 70rem) {
 
     img{
-        object-fit:contain;
+        object-fit:cover;
     }
 
     .card-small-image::after{
         width:0;
     }
 
-    .heading-2{
-        font-size:1.8rem;
+    .heading-1{
+        font-size:2rem;
+    }
+
+    .heading-2 {
+        font-size: 1.8rem;
     }
 }
