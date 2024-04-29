@@ -6,6 +6,12 @@
     height:24rem;
 }
 
+.card-title {
+    padding-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+
 .card-custom-main {
     background: white;
     position: relative;
