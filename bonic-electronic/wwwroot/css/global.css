@@ -38,8 +38,17 @@ i{
     font-weight:800;
 }
 
-.view-title:hover{
-    color:rgb(15, 52, 96);
+.greydefault-feature {
+    color: rgb(125, 135, 156);
+    font-size:1.4rem;
+}
+
+.heading-four{
+    font-size:1.4rem;
+}
+
+.view-title:hover {
+    color: rgb(15, 52, 96);
 }
 
 .bg-primary-subtle {
