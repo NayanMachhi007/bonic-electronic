@@ -38,6 +38,10 @@ i{
     font-weight:800;
 }
 
+.view-title:hover{
+    color:rgb(15, 52, 96);
+}
+
 .bg-primary-subtle {
     color: #ffc107;
 }
@@ -50,7 +54,7 @@ i{
     color:orange;
 }
 .heading-1 {
-    font-size: 5vw;
+    font-size: 4rem;
     margin-top: 0px;
     line-height: 1.2;
     margin-bottom: 1.35rem;
@@ -158,6 +162,7 @@ i{
     color: rgb(125, 135, 156);
     font-size: 14px;
     cursor:pointer;
+    transition:0.5s;
 }
 
 .caret-right-custom:before{

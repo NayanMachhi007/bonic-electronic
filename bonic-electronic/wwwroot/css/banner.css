@@ -1,5 +1,9 @@
-﻿.banner-swiper{
-    height:50vh;
+﻿.banner-details-wrapper{
+    padding:5rem 0;
+}
+
+.banner-swiper {
+    height: 50vh;
 }
 
 .banner-description {
@@ -25,8 +29,11 @@
     border-radius: 5px;
     padding: 1rem 1.5rem;
     display:inline-block;
+    transition:0.5s;
 }
 .bannerlink:hover{
+ 
+    background:rgb(15, 52, 96);
     color:white;
 }
 
