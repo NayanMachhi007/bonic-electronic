@@ -18,6 +18,19 @@
     font-weight: 600;
     font-size: 12px;
 }
-a::hover{
-    color:black;
+.categories_link {
+    background-color: #F6F9FC;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 5px 0;
+}
+.categories_link > a {
+    margin: 10px 0 0 0;
+    padding-left: 10px;
+}
+    .categories_link > a:hover {
+        color: #E94560;
+    }
+.icon_dropdown{
+    padding-left:20px;
 }
