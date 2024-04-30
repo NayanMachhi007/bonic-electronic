@@ -1,0 +1,52 @@
+﻿.signpost-custom{
+    padding-top:10rem;
+}
+
+.signpost-custom-title{
+    font-size:1rem;
+    font-weight:500;
+    padding:1rem 0 0 0;
+}
+
+.signpost-custom-image{
+    position:relative;
+    cursor:pointer;
+   
+}
+
+.signpost-custom-image img{
+    border-radius:10px;
+}
+
+    .signpost-custom-image:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        left: 0;
+        border-radius: 5px;
+        top: 0;
+        transition: 0.5s;
+    }
+
+    .signpost-custom-image:hover::after {
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+
+
+.signpost-custom-wrapper {
+    padding: 2rem;
+    background: white;
+    margin: 2rem 0;
+    border-radius: 10px;
+}
+
+.plus{
+    height:100%;
+}
+
+.plus-custom{
+    font-size:1.6rem;
+    font-weight:700;
+}

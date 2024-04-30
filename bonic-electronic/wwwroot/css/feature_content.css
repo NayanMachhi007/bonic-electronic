@@ -1,5 +1,9 @@
-﻿.feautre-content-image{
-    height:40rem;
+﻿.feature-content{
+    padding:8rem 0;
+}
+
+.feautre-content-image {
+    height: 40rem;
 }
 
 .heading-feature-title{

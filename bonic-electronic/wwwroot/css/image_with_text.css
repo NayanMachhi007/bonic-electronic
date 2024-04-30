@@ -1,0 +1,16 @@
+﻿.image-with-text-wrapper{
+    background:white;
+    padding:7rem;
+    flex-direction:column;
+    cursor:pointer;
+    border-radius:10px;
+}
+.image-with-text-wrapper:hover {
+        box-shadow: rgba(3, 0, 71, 0.09) 0px 8px 45px;
+    }
+
+.image-with-text-image{
+    width:5rem;
+    height:5rem;
+    border-radius:2.5rem;
+}
