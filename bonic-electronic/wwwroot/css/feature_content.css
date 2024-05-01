@@ -27,3 +27,33 @@
 .feature-sub-image:hover {
         border: 1px solid #E94560;
     }
+.feature-list__specs_unordered_list{
+    list-style:disc;
+}
+.feature-list__order_details_unorderdList_container{
+    padding:1.5rem 0.5rem;
+    border-radius:10px;
+}
+.feature-list__order_details_unordered_list {
+    list-style: disc;
+}
+.feature-list__order_details {
+    background-color: #E8F3FE;
+}
+.feature-list__item_inbox_details_unordered_list{
+    line-height:2.5;
+    padding-left:0;
+}
+.feature-list__item_inbox_details_unordered_list__links {
+    column-gap: 1rem;
+}
+.feature-list__item_inbox_details_unordered_list__links li a {
+    color: black;
+    font-size: 1.4rem;
+}
+.feature-list__item_inbox_details_unordered_list_media_deatail{
+    display:flex;
+}
+.tab-content_product_info_details{
+    padding: 2rem 0;
+}
