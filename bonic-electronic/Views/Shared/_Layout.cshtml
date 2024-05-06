@@ -32,10 +32,11 @@
                             <div class="search_section__filter_dropdown d-flex rounded-pill">
                                 <input class="primery-font-size form-control me-2 search_section__input rounded-pill" type="search" placeholder="Search" aria-label="Search">
                                 <div class="dropdown">
-                                    <button class="primery-font-size form-control dropdown-toggle rounded-pill" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    @* type="button" *@
+                                    <a class="primery-font-size form-control dropdown-toggle rounded-pill" data-bs-toggle="dropdown" aria-expanded="false">
                                         All Categories
-                                    </button>
-                                    <ul class="dropdown-menu">
+                                    </a>
+                                    <ul class="dropdown-menu search_all_categories">
                                         <li><a class="primery-font-size dropdown-item" href="#">Action</a></li>
                                         <li><a class="primery-font-size dropdown-item" href="#">Another action</a></li>
                                         <li><a class="primery-font-size dropdown-item" href="#">Something else here</a></li>
@@ -63,37 +64,150 @@
 
                         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                             <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                                    <svg b-3vxoliiprs="" width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g b-3vxoliiprs="" id="SVGRepo_bgCarrier" stroke-width="0"></g><g b-3vxoliiprs="" id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g b-3vxoliiprs="" id="SVGRepo_iconCarrier"> <path b-3vxoliiprs="" d="M9 11V6C9 4.34315 10.3431 3 12 3C13.6569 3 15 4.34315 15 6V10.9673M10.4 21H13.6C15.8402 21 16.9603 21 17.816 20.564C18.5686 20.1805 19.1805 19.5686 19.564 18.816C20 17.9603 20 16.8402 20 14.6V12.2C20 11.0799 20 10.5198 19.782 10.092C19.5903 9.71569 19.2843 9.40973 18.908 9.21799C18.4802 9 17.9201 9 16.8 9H7.2C6.0799 9 5.51984 9 5.09202 9.21799C4.71569 9.40973 4.40973 9.71569 4.21799 10.092C4 10.5198 4 11.0799 4 12.2V14.6C4 16.8402 4 17.9603 4.43597 18.816C4.81947 19.5686 5.43139 20.1805 6.18404 20.564C7.03968 21 8.15979 21 10.4 21Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                                    <span class="offcanvas-title_subtitle primery-font-size">3 items</span>
+                                </h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             </div>
                             <div class="offcanvas-body">
-                                <ul class="primery-font-size navbar-nav justify-content-end flex-grow-1 pe-3">
-                                    <li class="nav-item">
-                                        <a class="primery-font-size nav-link active" aria-current="page" href="#">Home</a>
-                                    </li>
-                                    <li class=" nav-item">
-                                        <a class="primery-font-size nav-link" href="#">Link</a>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="primery-font-size nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            Dropdown
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="primery-font-size dropdown-item" href="#">Action</a></li>
-                                            <li><a class="primery-font-size dropdown-item" href="#">Another action</a></li>
-                                            <li>
-                                                <hr class="dropdown-divider">
-                                            </li>
-                                            <li><a class="primery-font-size dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <form class="d-flex mt-3" role="search">
-                                    <input class="primery-font-size form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                    <button class="btn btn-outline-success" type="submit">Search</button>
-                                </form>
+                                @* cart-item-1 *@
+                                <div class="cart-item">
+                                    <div class="row">
+                                        <div class="col-1">
+                                            <div class="cart-item__count">
+                                                <div class="cart-item__add">
+                                                    <div class="cart-item__icon_cotainer cart-item__icon_plus_btn">
+                                                        <i class="fa-solid fa-plus"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="cart-item__number">
+                                                    <p class="cart-item__number_para primery-font-size">1<p/>
+                                                </div>
+                                                <div class="cart-item__decrese">
+                                                    <div class="cart-item__icon_cotainer cart-item__icon_minus_btn">
+                                                        <i class="fa-solid fa-minus"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="cart-item__img">
+                                                <div class="cart-item__img_container">
+                                                    <img src="https://bonik-react.vercel.app/assets/images/products/Fashion/Clothes/1.SilverHighNeckSweater.png" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="cart-item_product_details">
+                                                <div class="cart-item_product_details_cotanier">
+                                                    <h5 class="cart-item_product_name">Silver High Neck Sweater</h5>
+                                                    <p class="cart-item_product_price_and_count">$210 * 1</p>
+                                                    <h5 class="cart-item_product_price">US$ 210</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-1">
+                                            <div class="cart-item_product_delete">
+                                            <i class="fa-solid fa-x"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                @* cart item-1 end  *@
+                                <hr />
+                                @* cart item-2 start *@
+                                <div class="cart-item">
+                                    <div class="row">
+                                        <div class="col-1">
+                                            <div class="cart-item__count">
+                                                <div class="cart-item__add">
+                                                    <div class="cart-item__icon_cotainer cart-item__icon_plus_btn">
+                                                        <i class="fa-solid fa-plus"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="cart-item__number">
+                                                    <p class="cart-item__number_para primery-font-size">1<p />
+                                                </div>
+                                                <div class="cart-item__decrese">
+                                                    <div class="cart-item__icon_cotainer cart-item__icon_minus_btn">
+                                                        <i class="fa-solid fa-minus"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="cart-item__img">
+                                                <div class="cart-item__img_container">
+                                                    <img src="https://bonik-react.vercel.app/assets/images/products/Fashion/Clothes/1.SilverHighNeckSweater.png" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="cart-item_product_details">
+                                                <div class="cart-item_product_details_cotanier">
+                                                    <h5 class="cart-item_product_name">Silver High Neck Sweater</h5>
+                                                    <p class="cart-item_product_price_and_count">$210 * 1</p>
+                                                    <h5 class="cart-item_product_price">US$ 210</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-1">
+                                            <div class="cart-item_product_delete">
+                                                <i class="fa-solid fa-x"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                @* cart item-2 end*@
+                                <hr />
+                                @* cart item-3 start *@
+                                <div class="cart-item">
+                                    <div class="row">
+                                        <div class="col-1">
+                                            <div class="cart-item__count">
+                                                <div class="cart-item__add">
+                                                    <div class="cart-item__icon_cotainer cart-item__icon_plus_btn">
+                                                        <i class="fa-solid fa-plus"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="cart-item__number">
+                                                    <p class="cart-item__number_para primery-font-size">1<p />
+                                                </div>
+                                                <div class="cart-item__decrese">
+                                                    <div class="cart-item__icon_cotainer cart-item__icon_minus_btn">
+                                                        <i class="fa-solid fa-minus"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="cart-item__img">
+                                                <div class="cart-item__img_container">
+                                                    <img src="https://bonik-react.vercel.app/assets/images/products/Fashion/Clothes/1.SilverHighNeckSweater.png" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="cart-item_product_details">
+                                                <div class="cart-item_product_details_cotanier">
+                                                    <h5 class="cart-item_product_name">Silver High Neck Sweater</h5>
+                                                    <p class="cart-item_product_price_and_count">$210 * 1</p>
+                                                    <h5 class="cart-item_product_price">US$ 210</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-1">
+                                            <div class="cart-item_product_delete">
+                                                <i class="fa-solid fa-x"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                @* cart item-3 end*@
+                                <hr />
                             </div>
-                        </div>
+                        </ div>
                     </div>
                 </div>
                 </div>
@@ -141,7 +255,7 @@
                                                 <a class="primery-font-size nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Home
                                 </a>
-                                <ul class="dropdown-menu mt-3">
+                                <ul class="dropdown-menu">
                                     <li><a class="primery-font-size dropdown-item" href="#">Market 1</a></li>
                                                         <li><a class="primery-font-size dropdown-item" href="#">Market 2</a></li>
                                     <li><a class="primery-font-size dropdown-item" href="#">Market 3</a></li>
@@ -151,7 +265,7 @@
                                                 <a class="primery-font-size nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Pages
                             </a>
-                           <ul class="dropdown-menu mt-3">
+                           <ul class="dropdown-menu">
                                                     <li class="primery-font-size"><a class="primery-font-size dropdown-item" href="#">Action</a></li>
                                                     <li class="primery-font-size"><a class="primery-font-size dropdown-item" href="#">Another action</a></li>
                                                     <li class="primery-font-size"><a class="primery-font-size dropdown-item" href="#">Something else here</a></li>
@@ -161,7 +275,7 @@
                             <a class="primery-font-size nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 User Account
                             </a>
-                                                    <ul class="dropdown-menu mt-3">
+                                                    <ul class="dropdown-menu">
                                                     <li class="primery-font-size"><a class="primery-font-size dropdown-item" href="#">Action</a></li>
                                                     <li class="primery-font-size"><a class="primery-font-size dropdown-item" href="#">Another action</a></li>
                                                     <li class="primery-font-size"><a class="primery-font-size dropdown-item" href="#">Something else here</a></li>
@@ -171,7 +285,7 @@
                             <a class="primery-font-size nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Vendor Account
                             </a>
-                                                    <ul class="dropdown-menu mt-3">
+                                                    <ul class="dropdown-menu">
                                                     <li class="primery-font-size"><a class="primery-font-size dropdown-item" href="#">Action</a></li>
                                                     <li class="primery-font-size"><a class="primery-font-size dropdown-item" href="#">Another action</a></li>
                                                     <li class="primery-font-size"><a class="primery-font-size dropdown-item" href="#">Something else here</a></li>
@@ -186,10 +300,10 @@
                         </ul>
                     </div>
                 </div>
-            </nav>
+                    </nav>
+                            </div>
+                            </div>
                     </div>
-                        </div>
-            </div>
                 </div>
             </div>
         </div>
